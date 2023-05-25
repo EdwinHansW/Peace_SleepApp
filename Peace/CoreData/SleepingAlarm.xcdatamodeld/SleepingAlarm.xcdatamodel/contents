@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="SleepAlarmSet" representedClassName="SleepAlarmSet" syncable="YES" codeGenerationType="class">
+        <attribute name="bedTime" optional="YES" attributeType="Date" defaultDateTimeInterval="706602540" usesScalarValueType="NO"/>
+        <attribute name="endWakeUpTime" attributeType="Date" defaultDateTimeInterval="706596240" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="sleepGoal" optional="YES" attributeType="Integer 64" defaultValueString="8" usesScalarValueType="YES"/>
+        <attribute name="startWakeUpTime" attributeType="Date" defaultDateTimeInterval="706596240" usesScalarValueType="NO"/>
+    </entity>
+</model>

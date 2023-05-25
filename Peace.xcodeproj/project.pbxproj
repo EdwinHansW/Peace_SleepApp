@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA5392112A17046D005AD2FE /* AskName.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5392102A17046D005AD2FE /* AskName.swift */; };
+		CA5392152A174818005AD2FE /* PermissionAskingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5392142A174818005AD2FE /* PermissionAskingView.swift */; };
+		CA5392172A176213005AD2FE /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5392162A176213005AD2FE /* HealthKitManager.swift */; };
+		CA5392192A17DE0C005AD2FE /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5392182A17DE0C005AD2FE /* AlarmView.swift */; };
+		CA56AFDE2A1F4891001F02D7 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA56AFDD2A1F4891001F02D7 /* NotificationManager.swift */; };
+		CA56AFE42A1FAF99001F02D7 /* BalineseGamelan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CA56AFE32A1FAF99001F02D7 /* BalineseGamelan.mp3 */; };
+		CA645D702A1A38E3005AA35C /* AlarmHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA645D6F2A1A38E3005AA35C /* AlarmHeader.swift */; };
+		CA645D7A2A1A3FE4005AA35C /* DayPick.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA645D792A1A3FE4005AA35C /* DayPick.swift */; };
+		CA645D7C2A1A4173005AA35C /* AlarmCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA645D7B2A1A4173005AA35C /* AlarmCard.swift */; };
+		CA645D7E2A1A421E005AA35C /* AlarmActivate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA645D7D2A1A421E005AA35C /* AlarmActivate.swift */; };
+		CA645D812A1A438E005AA35C /* AlarmSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA645D802A1A438E005AA35C /* AlarmSchedule.swift */; };
+		CA645D832A1A43FA005AA35C /* AddSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA645D822A1A43FA005AA35C /* AddSchedule.swift */; };
+		CA645D872A1A472E005AA35C /* AskingHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA645D862A1A472E005AA35C /* AskingHeader.swift */; };
+		CA645D892A1A47C4005AA35C /* ConnectHealthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA645D882A1A47C4005AA35C /* ConnectHealthBar.swift */; };
+		CA645D8E2A1C9D3C005AA35C /* WakeUpPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA645D8D2A1C9D3C005AA35C /* WakeUpPicker.swift */; };
+		CA645D912A1CA59E005AA35C /* AlarmPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA645D902A1CA59E005AA35C /* AlarmPop.swift */; };
+		CAA24CB02A1DBF1F0009B908 /* SleepingAlarm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CAA24CAE2A1DBF1F0009B908 /* SleepingAlarm.xcdatamodeld */; };
+		CAA24CB22A1DC0A20009B908 /* ViewModelAlarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA24CB12A1DC0A20009B908 /* ViewModelAlarm.swift */; };
+		CAA24CB42A1DE0590009B908 /* BedTimePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA24CB32A1DE0590009B908 /* BedTimePicker.swift */; };
+		CAC1D7422A14C040007FE9E8 /* PeaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC1D7412A14C040007FE9E8 /* PeaceApp.swift */; };
+		CAC1D7442A14C040007FE9E8 /* HomepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC1D7432A14C040007FE9E8 /* HomepageView.swift */; };
+		CAC1D7462A14C041007FE9E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC1D7452A14C041007FE9E8 /* Assets.xcassets */; };
+		CAC1D7492A14C041007FE9E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAC1D7482A14C041007FE9E8 /* Preview Assets.xcassets */; };
+		CAC1D7532A14C041007FE9E8 /* PeaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC1D7522A14C041007FE9E8 /* PeaceTests.swift */; };
+		CAC1D75D2A14C041007FE9E8 /* PeaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC1D75C2A14C041007FE9E8 /* PeaceUITests.swift */; };
+		CAC1D75F2A14C041007FE9E8 /* PeaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC1D75E2A14C041007FE9E8 /* PeaceUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAC1D74F2A14C041007FE9E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAC1D7362A14C040007FE9E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAC1D73D2A14C040007FE9E8;
+			remoteInfo = Peace;
+		};
+		CAC1D7592A14C041007FE9E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAC1D7362A14C040007FE9E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAC1D73D2A14C040007FE9E8;
+			remoteInfo = Peace;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA5392102A17046D005AD2FE /* AskName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskName.swift; sourceTree = "<group>"; };
+		CA5392142A174818005AD2FE /* PermissionAskingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionAskingView.swift; sourceTree = "<group>"; };
+		CA5392162A176213005AD2FE /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		CA5392182A17DE0C005AD2FE /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
+		CA56AFDC2A1F480D001F02D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CA56AFDD2A1F4891001F02D7 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		CA56AFE32A1FAF99001F02D7 /* BalineseGamelan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BalineseGamelan.mp3; sourceTree = "<group>"; };
+		CA645D6F2A1A38E3005AA35C /* AlarmHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmHeader.swift; sourceTree = "<group>"; };
+		CA645D792A1A3FE4005AA35C /* DayPick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPick.swift; sourceTree = "<group>"; };
+		CA645D7B2A1A4173005AA35C /* AlarmCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmCard.swift; sourceTree = "<group>"; };
+		CA645D7D2A1A421E005AA35C /* AlarmActivate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmActivate.swift; sourceTree = "<group>"; };
+		CA645D802A1A438E005AA35C /* AlarmSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmSchedule.swift; sourceTree = "<group>"; };
+		CA645D822A1A43FA005AA35C /* AddSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSchedule.swift; sourceTree = "<group>"; };
+		CA645D852A1A45ED005AA35C /* Peace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Peace.entitlements; sourceTree = "<group>"; };
+		CA645D862A1A472E005AA35C /* AskingHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskingHeader.swift; sourceTree = "<group>"; };
+		CA645D882A1A47C4005AA35C /* ConnectHealthBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectHealthBar.swift; sourceTree = "<group>"; };
+		CA645D8D2A1C9D3C005AA35C /* WakeUpPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpPicker.swift; sourceTree = "<group>"; };
+		CA645D902A1CA59E005AA35C /* AlarmPop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmPop.swift; sourceTree = "<group>"; };
+		CAA24CAF2A1DBF1F0009B908 /* SleepingAlarm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SleepingAlarm.xcdatamodel; sourceTree = "<group>"; };
+		CAA24CB12A1DC0A20009B908 /* ViewModelAlarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelAlarm.swift; sourceTree = "<group>"; };
+		CAA24CB32A1DE0590009B908 /* BedTimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedTimePicker.swift; sourceTree = "<group>"; };
+		CAC1D73E2A14C040007FE9E8 /* Peace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAC1D7412A14C040007FE9E8 /* PeaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeaceApp.swift; sourceTree = "<group>"; };
+		CAC1D7432A14C040007FE9E8 /* HomepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
+		CAC1D7452A14C041007FE9E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAC1D7482A14C041007FE9E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CAC1D74E2A14C041007FE9E8 /* PeaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAC1D7522A14C041007FE9E8 /* PeaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeaceTests.swift; sourceTree = "<group>"; };
+		CAC1D7582A14C041007FE9E8 /* PeaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAC1D75C2A14C041007FE9E8 /* PeaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeaceUITests.swift; sourceTree = "<group>"; };
+		CAC1D75E2A14C041007FE9E8 /* PeaceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeaceUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAC1D73B2A14C040007FE9E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAC1D74B2A14C041007FE9E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAC1D7552A14C041007FE9E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA645D6D2A1A37C7005AA35C /* SettingAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				CA5392182A17DE0C005AD2FE /* AlarmView.swift */,
+				CA645D6F2A1A38E3005AA35C /* AlarmHeader.swift */,
+				CA645D7B2A1A4173005AA35C /* AlarmCard.swift */,
+				CA645D7D2A1A421E005AA35C /* AlarmActivate.swift */,
+				CA645D8D2A1C9D3C005AA35C /* WakeUpPicker.swift */,
+				CAA24CB32A1DE0590009B908 /* BedTimePicker.swift */,
+				CA645D792A1A3FE4005AA35C /* DayPick.swift */,
+			);
+			path = SettingAlarm;
+			sourceTree = "<group>";
+		};
+		CA645D7F2A1A4365005AA35C /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				CAC1D7432A14C040007FE9E8 /* HomepageView.swift */,
+				CA645D802A1A438E005AA35C /* AlarmSchedule.swift */,
+				CA645D822A1A43FA005AA35C /* AddSchedule.swift */,
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
+		CA645D842A1A4590005AA35C /* PermissionAsking */ = {
+			isa = PBXGroup;
+			children = (
+				CA5392142A174818005AD2FE /* PermissionAskingView.swift */,
+				CA645D862A1A472E005AA35C /* AskingHeader.swift */,
+				CA645D882A1A47C4005AA35C /* ConnectHealthBar.swift */,
+			);
+			path = PermissionAsking;
+			sourceTree = "<group>";
+		};
+		CA645D8A2A1A4C7A005AA35C /* NameAsking */ = {
+			isa = PBXGroup;
+			children = (
+				CA5392102A17046D005AD2FE /* AskName.swift */,
+			);
+			path = NameAsking;
+			sourceTree = "<group>";
+		};
+		CA645D8F2A1CA584005AA35C /* AlarmView */ = {
+			isa = PBXGroup;
+			children = (
+				CA645D902A1CA59E005AA35C /* AlarmPop.swift */,
+			);
+			path = AlarmView;
+			sourceTree = "<group>";
+		};
+		CAA24CAD2A1DBEF80009B908 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CAA24CAE2A1DBF1F0009B908 /* SleepingAlarm.xcdatamodeld */,
+				CAA24CB12A1DC0A20009B908 /* ViewModelAlarm.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CAC1D7352A14C040007FE9E8 = {
+			isa = PBXGroup;
+			children = (
+				CA56AFDD2A1F4891001F02D7 /* NotificationManager.swift */,
+				CAC1D7512A14C041007FE9E8 /* PeaceTests */,
+				CAC1D7402A14C040007FE9E8 /* Peace */,
+				CAC1D75B2A14C041007FE9E8 /* PeaceUITests */,
+				CAC1D73F2A14C040007FE9E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAC1D73F2A14C040007FE9E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAC1D73E2A14C040007FE9E8 /* Peace.app */,
+				CAC1D74E2A14C041007FE9E8 /* PeaceTests.xctest */,
+				CAC1D7582A14C041007FE9E8 /* PeaceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAC1D7402A14C040007FE9E8 /* Peace */ = {
+			isa = PBXGroup;
+			children = (
+				CA56AFDC2A1F480D001F02D7 /* Info.plist */,
+				CAA24CAD2A1DBEF80009B908 /* CoreData */,
+				CA645D8F2A1CA584005AA35C /* AlarmView */,
+				CAC1D7412A14C040007FE9E8 /* PeaceApp.swift */,
+				CA645D852A1A45ED005AA35C /* Peace.entitlements */,
+				CA645D8A2A1A4C7A005AA35C /* NameAsking */,
+				CA645D842A1A4590005AA35C /* PermissionAsking */,
+				CA645D7F2A1A4365005AA35C /* Homepage */,
+				CA645D6D2A1A37C7005AA35C /* SettingAlarm */,
+				CA5392162A176213005AD2FE /* HealthKitManager.swift */,
+				CAC1D7452A14C041007FE9E8 /* Assets.xcassets */,
+				CA56AFE32A1FAF99001F02D7 /* BalineseGamelan.mp3 */,
+				CAC1D7472A14C041007FE9E8 /* Preview Content */,
+			);
+			path = Peace;
+			sourceTree = "<group>";
+		};
+		CAC1D7472A14C041007FE9E8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CAC1D7482A14C041007FE9E8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CAC1D7512A14C041007FE9E8 /* PeaceTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAC1D7522A14C041007FE9E8 /* PeaceTests.swift */,
+			);
+			path = PeaceTests;
+			sourceTree = "<group>";
+		};
+		CAC1D75B2A14C041007FE9E8 /* PeaceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CAC1D75C2A14C041007FE9E8 /* PeaceUITests.swift */,
+				CAC1D75E2A14C041007FE9E8 /* PeaceUITestsLaunchTests.swift */,
+			);
+			path = PeaceUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAC1D73D2A14C040007FE9E8 /* Peace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAC1D7622A14C041007FE9E8 /* Build configuration list for PBXNativeTarget "Peace" */;
+			buildPhases = (
+				CAC1D73A2A14C040007FE9E8 /* Sources */,
+				CAC1D73B2A14C040007FE9E8 /* Frameworks */,
+				CAC1D73C2A14C040007FE9E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Peace;
+			productName = Peace;
+			productReference = CAC1D73E2A14C040007FE9E8 /* Peace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAC1D74D2A14C041007FE9E8 /* PeaceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAC1D7652A14C041007FE9E8 /* Build configuration list for PBXNativeTarget "PeaceTests" */;
+			buildPhases = (
+				CAC1D74A2A14C041007FE9E8 /* Sources */,
+				CAC1D74B2A14C041007FE9E8 /* Frameworks */,
+				CAC1D74C2A14C041007FE9E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAC1D7502A14C041007FE9E8 /* PBXTargetDependency */,
+			);
+			name = PeaceTests;
+			productName = PeaceTests;
+			productReference = CAC1D74E2A14C041007FE9E8 /* PeaceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CAC1D7572A14C041007FE9E8 /* PeaceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAC1D7682A14C041007FE9E8 /* Build configuration list for PBXNativeTarget "PeaceUITests" */;
+			buildPhases = (
+				CAC1D7542A14C041007FE9E8 /* Sources */,
+				CAC1D7552A14C041007FE9E8 /* Frameworks */,
+				CAC1D7562A14C041007FE9E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAC1D75A2A14C041007FE9E8 /* PBXTargetDependency */,
+			);
+			name = PeaceUITests;
+			productName = PeaceUITests;
+			productReference = CAC1D7582A14C041007FE9E8 /* PeaceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAC1D7362A14C040007FE9E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					CAC1D73D2A14C040007FE9E8 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					CAC1D74D2A14C041007FE9E8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CAC1D73D2A14C040007FE9E8;
+					};
+					CAC1D7572A14C041007FE9E8 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = CAC1D73D2A14C040007FE9E8;
+					};
+				};
+			};
+			buildConfigurationList = CAC1D7392A14C040007FE9E8 /* Build configuration list for PBXProject "Peace" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAC1D7352A14C040007FE9E8;
+			productRefGroup = CAC1D73F2A14C040007FE9E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAC1D73D2A14C040007FE9E8 /* Peace */,
+				CAC1D74D2A14C041007FE9E8 /* PeaceTests */,
+				CAC1D7572A14C041007FE9E8 /* PeaceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAC1D73C2A14C040007FE9E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC1D7492A14C041007FE9E8 /* Preview Assets.xcassets in Resources */,
+				CA56AFE42A1FAF99001F02D7 /* BalineseGamelan.mp3 in Resources */,
+				CAC1D7462A14C041007FE9E8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAC1D74C2A14C041007FE9E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAC1D7562A14C041007FE9E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAC1D73A2A14C040007FE9E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA645D812A1A438E005AA35C /* AlarmSchedule.swift in Sources */,
+				CA5392112A17046D005AD2FE /* AskName.swift in Sources */,
+				CA645D832A1A43FA005AA35C /* AddSchedule.swift in Sources */,
+				CA5392192A17DE0C005AD2FE /* AlarmView.swift in Sources */,
+				CAA24CB22A1DC0A20009B908 /* ViewModelAlarm.swift in Sources */,
+				CA645D7E2A1A421E005AA35C /* AlarmActivate.swift in Sources */,
+				CAC1D7442A14C040007FE9E8 /* HomepageView.swift in Sources */,
+				CA645D7C2A1A4173005AA35C /* AlarmCard.swift in Sources */,
+				CA645D8E2A1C9D3C005AA35C /* WakeUpPicker.swift in Sources */,
+				CAA24CB02A1DBF1F0009B908 /* SleepingAlarm.xcdatamodeld in Sources */,
+				CA645D872A1A472E005AA35C /* AskingHeader.swift in Sources */,
+				CA5392152A174818005AD2FE /* PermissionAskingView.swift in Sources */,
+				CA645D702A1A38E3005AA35C /* AlarmHeader.swift in Sources */,
+				CAA24CB42A1DE0590009B908 /* BedTimePicker.swift in Sources */,
+				CA5392172A176213005AD2FE /* HealthKitManager.swift in Sources */,
+				CAC1D7422A14C040007FE9E8 /* PeaceApp.swift in Sources */,
+				CA645D892A1A47C4005AA35C /* ConnectHealthBar.swift in Sources */,
+				CA56AFDE2A1F4891001F02D7 /* NotificationManager.swift in Sources */,
+				CA645D912A1CA59E005AA35C /* AlarmPop.swift in Sources */,
+				CA645D7A2A1A3FE4005AA35C /* DayPick.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAC1D74A2A14C041007FE9E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC1D7532A14C041007FE9E8 /* PeaceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAC1D7542A14C041007FE9E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAC1D75D2A14C041007FE9E8 /* PeaceUITests.swift in Sources */,
+				CAC1D75F2A14C041007FE9E8 /* PeaceUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAC1D7502A14C041007FE9E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAC1D73D2A14C040007FE9E8 /* Peace */;
+			targetProxy = CAC1D74F2A14C041007FE9E8 /* PBXContainerItemProxy */;
+		};
+		CAC1D75A2A14C041007FE9E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAC1D73D2A14C040007FE9E8 /* Peace */;
+			targetProxy = CAC1D7592A14C041007FE9E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CAC1D7602A14C041007FE9E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAC1D7612A14C041007FE9E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAC1D7632A14C041007FE9E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Peace/Peace.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Peace/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GVFNBA9UF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Peace/Info.plist;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Your Sleep data will be used to record your Sleep data";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Your Sleep data will be used to recognize your REM Sleep Phase ";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Your Sleep data will be used to wake you up during your REM Sleep Phase";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Edwin-Hans-Wijaya.Peace";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAC1D7642A14C041007FE9E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Peace/Peace.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Peace/Preview Content\"";
+				DEVELOPMENT_TEAM = 2GVFNBA9UF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Peace/Info.plist;
+				INFOPLIST_KEY_NSHealthClinicalHealthRecordsShareUsageDescription = "Your Sleep data will be used to record your Sleep data";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Your Sleep data will be used to recognize your REM Sleep Phase ";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Your Sleep data will be used to wake you up during your REM Sleep Phase";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Edwin-Hans-Wijaya.Peace";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CAC1D7662A14C041007FE9E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Edwin-Hans-Wijaya.PeaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Peace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Peace";
+			};
+			name = Debug;
+		};
+		CAC1D7672A14C041007FE9E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Edwin-Hans-Wijaya.PeaceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Peace.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Peace";
+			};
+			name = Release;
+		};
+		CAC1D7692A14C041007FE9E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Edwin-Hans-Wijaya.PeaceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Peace;
+			};
+			name = Debug;
+		};
+		CAC1D76A2A14C041007FE9E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Edwin-Hans-Wijaya.PeaceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Peace;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAC1D7392A14C040007FE9E8 /* Build configuration list for PBXProject "Peace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAC1D7602A14C041007FE9E8 /* Debug */,
+				CAC1D7612A14C041007FE9E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAC1D7622A14C041007FE9E8 /* Build configuration list for PBXNativeTarget "Peace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAC1D7632A14C041007FE9E8 /* Debug */,
+				CAC1D7642A14C041007FE9E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAC1D7652A14C041007FE9E8 /* Build configuration list for PBXNativeTarget "PeaceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAC1D7662A14C041007FE9E8 /* Debug */,
+				CAC1D7672A14C041007FE9E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAC1D7682A14C041007FE9E8 /* Build configuration list for PBXNativeTarget "PeaceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAC1D7692A14C041007FE9E8 /* Debug */,
+				CAC1D76A2A14C041007FE9E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CAA24CAE2A1DBF1F0009B908 /* SleepingAlarm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CAA24CAF2A1DBF1F0009B908 /* SleepingAlarm.xcdatamodel */,
+			);
+			currentVersion = CAA24CAF2A1DBF1F0009B908 /* SleepingAlarm.xcdatamodel */;
+			path = SleepingAlarm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CAC1D7362A14C040007FE9E8 /* Project object */;
+}
