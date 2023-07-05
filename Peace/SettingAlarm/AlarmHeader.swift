@@ -33,12 +33,12 @@ struct AlarmHeader: View {
             Image("SleepingIcon")
                 .padding(.bottom, 20)
             
-            
             Text("Estimated sleep duration")
                 .fontWeight(.ultraLight)
                 .foregroundColor(.white)
                 .font(.system(size: 28))
                 .padding(.bottom, -10)
+            
         }
     }
 }

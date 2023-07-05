@@ -12,8 +12,6 @@ public class HealthKitManager: NSObject, ObservableObject {
     var audioPlayer: AVAudioPlayer?
     var isPlaying = false
     
-//    let desiredStartTime: TimeInterval = 6 * 60 * 60 + 30 * 60 // 6:30 AM Hour -> Minute -> Second
-//    let desiredEndTime: TimeInterval = 6 * 60 * 60 + 45 * 60 // 6:45 AM
     
     override init() {
         super.init()

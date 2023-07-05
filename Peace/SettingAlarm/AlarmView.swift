@@ -65,7 +65,9 @@ struct AlarmView: View {
                     sleepAlarm: sleepAlarm,
                     isEditing: isEditing
                 )
-
+                Image("BeniSleep")
+                    .resizable()
+                    .frame(width: 10, height: 10)
                 Spacer()
                 Spacer()
             }

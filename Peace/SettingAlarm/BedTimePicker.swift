@@ -4,6 +4,8 @@ struct bedTimePicker: View {
     @Environment(\.dismiss) var dismiss
     @Binding var timeBed : Date
     
+    var notifManager = NotificationManager()
+    
     var body: some View {
         ZStack {
             Rectangle()
@@ -25,6 +27,9 @@ struct bedTimePicker: View {
                     .padding(.bottom, 20)
 
                 Button{
+                    let alarmBed = timeBed
+                    notifManager.scheduleNotificationGoToBed(at: alarmBed)
+                    
                     dismiss()
                 }label:{
                     Rectangle()

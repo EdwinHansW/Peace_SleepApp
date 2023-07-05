@@ -32,6 +32,7 @@ struct AskName: View {
                                 .overlay(RoundedRectangle(cornerRadius: 10, style: .continuous).strokeBorder(Color("ColorBright"), style: StrokeStyle(lineWidth: 2)))
                             }
                             .padding(.bottom, 20)
+                            
                         }
                         .foregroundColor(.white)
                     }
@@ -58,7 +59,11 @@ struct AskName: View {
                         }
                     }
                     .padding(.horizontal, 80)
+                    
                     Spacer()
+                    Image("BeniSleep")
+                        .resizable()
+                        .frame(width: 10, height: 10)
                 }
             }
             .ignoresSafeArea()

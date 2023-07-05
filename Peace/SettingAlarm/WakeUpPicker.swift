@@ -43,7 +43,8 @@ struct wakeUpPicker: View {
 
                 Button{
                     let alarmTime = startTime
-                    notifManager.scheduleNotification(at: alarmTime)
+                    notifManager.scheduleNotificationWakeUp(at: alarmTime)
+
                     
                     dismiss()
                 }label:{
@@ -57,6 +58,8 @@ struct wakeUpPicker: View {
                                 .fontWeight(.bold)
                                 .font(.system(size: 14))
                         }
+                }.onAppear {
+                    notifManager.registerNotificationCategories()
                 }
             }
         }

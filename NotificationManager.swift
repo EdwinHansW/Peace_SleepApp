@@ -13,18 +13,16 @@ class NotificationManager {
             DispatchQueue.main.async {
                 self.authorizationStatus = isGranted ? .authorized : .denied
             }
-            
         }
     }
 
-    func scheduleNotification(at date: Date) {
-
+    func scheduleNotificationWakeUp(at date: Date) {
         let content = UNMutableNotificationContent()
-        content.title = "Wakey-wakey~"
-        content.body = "It's time to wake up"
+        content.title = "Rise and shine!"
+        content.body = "It's time to wake up and have a wonderful day!"
         content.sound = UNNotificationSound(named: UNNotificationSoundName("BalineseGamelan"))
-        
-        //set notif based on date
+        content.categoryIdentifier = "wakeupCategory"
+
         let calendar = Calendar.current
         let components = calendar.dateComponents([.hour, .minute], from: date)
 
@@ -40,5 +38,48 @@ class NotificationManager {
             }
         }
     }
-}
 
+    func scheduleNotificationGoToBed(at date: Date) {
+        let content = UNMutableNotificationContent()
+        content.title = "Your bed misses you!"
+        content.body = "It's time to sleep and have an amazing dream!"
+        content.sound = UNNotificationSound(named: UNNotificationSoundName("BalineseGamelan"))
+        content.categoryIdentifier = "sleepCategory"
+
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.hour, .minute], from: date)
+
+        let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
+
+        let request = UNNotificationRequest(identifier: "notificationId2", content: content, trigger: trigger)
+
+        UNUserNotificationCenter.current().add(request) { error in
+            if let error = error {
+                print("Error scheduling notification: \(error.localizedDescription)")
+            } else {
+                print("Notification scheduled success")
+            }
+        }
+    }
+
+    func registerNotificationCategories() {
+        let wakeUpCategory = UNNotificationCategory(
+            identifier: "wakeupCategory",
+            actions: [],
+            intentIdentifiers: [],
+            hiddenPreviewsBodyPlaceholder: "",
+            options: .customDismissAction
+        )
+
+        let sleepCategory = UNNotificationCategory(
+            identifier: "sleepCategory",
+            actions: [],
+            intentIdentifiers: [],
+            hiddenPreviewsBodyPlaceholder: "",
+            options: .customDismissAction
+        )
+
+        let notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter.setNotificationCategories([wakeUpCategory, sleepCategory])
+    }
+}
